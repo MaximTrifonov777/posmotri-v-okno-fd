@@ -235,22 +235,27 @@ ol {
   position: relative;
 }
 
-.content__list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-height: 400px;
+.content__list-container {
+  height: 400px;
+  width: 100%;
   overflow-y: auto;
   padding-right: 5px;
+  position: relative;
 }
 
-.content__list::-webkit-scrollbar {
+.content__list-container::-webkit-scrollbar {
   width: 4px;
   background-color: #545050;
 }
 
-.content__list::-webkit-scrollbar-thumb {
+.content__list-container::-webkit-scrollbar-thumb {
   background-color: #fff;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .content__list-item {
