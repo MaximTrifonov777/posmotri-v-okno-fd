@@ -46,10 +46,12 @@ ol {
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 0.9;
   margin-bottom: 26px;
   letter-spacing: -0.02em;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .content__accent {
@@ -61,14 +63,14 @@ ol {
 .content__accent::before {
   content: "ПО";
   position: absolute;
-  top: -65px;
+  top: -10px;
   left: 0;
   color: #545050;
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 0.9;
   letter-spacing: -0.02em;
 }
 
@@ -243,6 +245,7 @@ ol {
 .search-form__submit-button {
   padding: 11px 32px;
   min-width: 194px;
+  height: 44px;
 }
 
 .content__details {
@@ -259,7 +262,7 @@ ol {
 }
 
 .content__list-container {
-  max-height: 400px;
+  max-height: 298px;
   overflow-y: auto;
   position: relative;
 }
@@ -353,6 +356,7 @@ ol {
   padding: 11px;
   inline-size: calc(100% - 4px);
   margin: 0 2px 2px;
+  height: 44px;
 }
 
 .visually-hidden {
