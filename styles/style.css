@@ -49,17 +49,35 @@ ol {
   line-height: 1;
   margin-bottom: 26px;
   letter-spacing: -0.02em;
+  position: relative;
 }
 
-.title__accent {
+.content__accent {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+}
+
+.content__accent::before {
+  content: "ПО";
+  position: absolute;
+  top: -65px;
+  left: 0;
   color: #545050;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .content {
   display: flex;
   gap: 30px;
   align-items: flex-end;
-  width: 100%;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 .result {
@@ -232,14 +250,17 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  position: relative;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .content__list-container {
-  height: 400px;
-  width: 100%;
+  max-height: 400px;
   overflow-y: auto;
-  padding-right: 5px;
   position: relative;
 }
 
@@ -250,12 +271,6 @@ ol {
 
 .content__list-container::-webkit-scrollbar-thumb {
   background-color: #fff;
-}
-
-.content__list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .content__list-item {
