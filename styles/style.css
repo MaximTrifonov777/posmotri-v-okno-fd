@@ -10,7 +10,7 @@ html {
 
 .page {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
@@ -49,21 +49,20 @@ ol {
   line-height: 0.9;
   margin-bottom: 26px;
   letter-spacing: -0.02em;
+  display: block;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 .content__accent {
   position: relative;
-  display: inline-block;
+  display: inline;
   color: transparent;
 }
 
 .content__accent::before {
   content: "ПО";
   position: absolute;
-  top: -10px;
+  top: 8px;
   left: 0;
   color: #545050;
   font-family: Oswald, sans-serif;
