@@ -10,7 +10,7 @@ html {
 
 .page {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
@@ -94,6 +94,7 @@ ol {
   width: 100%;
   aspect-ratio: 16 / 9;
   background-color: #000;
+  height: 387px;
 }
 
 .result__video {
@@ -137,7 +138,7 @@ ol {
 
 .search-form__textfield {
   width: 225px;
-  padding: 4px 10px;
+  padding: 2px 0px;
   background-color: transparent;
   border: none;
   border-top: 1px solid #fff;
@@ -242,7 +243,7 @@ ol {
 }
 
 .search-form__submit-button {
-  padding: 11px 32px;
+  padding: 5px 32px;
   min-width: 194px;
   height: 44px;
 }
@@ -261,7 +262,8 @@ ol {
 }
 
 .content__list-container {
-  max-height: 298px;
+  height: 298px;
+  width: 100%;
   overflow-y: auto;
   position: relative;
 }
@@ -339,7 +341,6 @@ ol {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  max-height: 44px;
 }
 
 .content__video-card-thumbnail {
@@ -352,10 +353,9 @@ ol {
 
 .more-button {
   width: 100%;
-  padding: 11px;
+  padding: 5px 0;
   inline-size: calc(100% - 4px);
-  margin: 0 2px 2px;
-  height: 44px;
+  margin: 30px 2px 2px;
 }
 
 .visually-hidden {
